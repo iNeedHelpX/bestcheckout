@@ -11,7 +11,7 @@ class AppSetup extends StatefulWidget {
 }
 
 class _AppSetupState extends State<AppSetup> {
-  int _currentPage = 1;
+  int _currentPage = 0;
   final _pageController = PageController();
   @override
   Widget build(BuildContext context) {
