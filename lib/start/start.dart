@@ -1,4 +1,5 @@
 import 'package:bestcheckout/start/app_setup.dart';
+import 'package:bestcheckout/start/route_generator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
