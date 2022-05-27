@@ -1,4 +1,5 @@
 import 'package:bestcheckout/colors/colours_list.dart';
+import 'package:bestcheckout/pages/homepage.dart';
 import 'package:bottom_bar/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -10,17 +11,18 @@ class AppSetup extends StatefulWidget {
 }
 
 class _AppSetupState extends State<AppSetup> {
-  int _currentPage = 0;
+  int _currentPage = 2;
   final _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bg,
+      backgroundColor: greenpastel,
       body: PageView(
         controller: _pageController,
         children: [
+          //pages
           Container(color: Colors.blue),
-          Container(color: Colors.red),
+          HomePage(),
           Container(color: Colors.greenAccent.shade700),
           Container(color: Colors.orange),
         ],
@@ -29,6 +31,8 @@ class _AppSetupState extends State<AppSetup> {
         },
       ),
       bottomNavigationBar: BottomBar(
+        backgroundColor: textgreyblue,
+        height: 90,
         textStyle: TextStyle(fontWeight: FontWeight.bold),
         selectedIndex: _currentPage,
         onTap: (int index) {
