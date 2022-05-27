@@ -11,7 +11,7 @@ class AppSetup extends StatefulWidget {
 }
 
 class _AppSetupState extends State<AppSetup> {
-  int _currentPage = 2;
+  int _currentPage = 1;
   final _pageController = PageController();
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,6 @@ class _AppSetupState extends State<AppSetup> {
           Container(color: Colors.blue),
           HomePage(),
           Container(color: Colors.greenAccent.shade700),
-          Container(color: Colors.orange),
         ],
         onPageChanged: (index) {
           setState(() => _currentPage = index);
@@ -56,13 +55,6 @@ class _AppSetupState extends State<AppSetup> {
             title: Text('Account'),
             backgroundColorOpacity: 0.1,
             activeColor: Colors.greenAccent.shade700,
-          ),
-          BottomBarItem(
-            icon: Icon(Icons.settings),
-            title: Text('Settings'),
-            activeColor: Colors.orange,
-            activeIconColor: Colors.orange.shade600,
-            activeTitleColor: Colors.orange.shade700,
           ),
         ],
       ),
