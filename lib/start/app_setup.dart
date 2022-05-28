@@ -32,7 +32,7 @@ class _AppSetupState extends State<AppSetup> {
         },
       ),
       bottomNavigationBar: BottomBar(
-        backgroundColor: textgreyblue,
+        backgroundColor: lightpink,
         height: 90,
         textStyle: TextStyle(fontWeight: FontWeight.bold),
         selectedIndex: _currentPage,

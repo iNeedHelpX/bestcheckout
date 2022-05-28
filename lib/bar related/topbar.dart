@@ -9,7 +9,7 @@ AppBar myPinkAppBar() {
       "Best checkout",
       style: GoogleFonts.akayaKanadaka(
         color: orangetext,
-        fontSize: 20,
+        fontSize: 36,
       ),
     ),
     centerTitle: true,
