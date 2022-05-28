@@ -1,3 +1,4 @@
+import 'package:bestcheckout/bar%20related/topbar.dart';
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:bestcheckout/pages/homepage.dart';
 import 'package:bottom_bar/bottom_bar.dart';
@@ -17,6 +18,7 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: greenpastel,
+      appBar: myPinkAppBar(),
       body: PageView(
         controller: _pageController,
         children: [
