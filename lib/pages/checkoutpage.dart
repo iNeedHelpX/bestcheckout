@@ -12,7 +12,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: lightpink,
+      backgroundColor: lightgoldbg,
     );
   }
 }

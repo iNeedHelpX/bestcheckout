@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //main colours
 const bg = Color.fromARGB(255, 44, 41, 72);
+const lightgoldbg = Color.fromARGB(255, 255, 247, 219);
 const containerback = Color.fromARGB(255, 142, 73, 255);
 const brightpink = Color.fromARGB(255, 255, 8, 186);
 const brightpink1 = Color.fromARGB(255, 253, 0, 97);
