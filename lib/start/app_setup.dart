@@ -46,13 +46,13 @@ class _AppSetupState extends State<AppSetup> {
             activeTitleColor: Colors.blue.shade600,
           ),
           BottomBarItem(
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.shopping_basket_rounded),
             title: Text('checkout'),
             activeColor: tabicon,
           ),
           BottomBarItem(
-            icon: Icon(Icons.person),
-            title: Text('Account'),
+            icon: Icon(Icons.info_rounded),
+            title: Text('Information'),
             backgroundColorOpacity: 0.1,
             activeColor: Colors.greenAccent.shade700,
           ),
