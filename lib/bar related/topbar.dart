@@ -14,7 +14,7 @@ AppBar myPurpleBar() {
       ),
     ),
     centerTitle: true,
-    toolbarHeight: 90,
+    toolbarHeight: 100,
     flexibleSpace: Container(
       decoration: BoxDecoration(
         gradient: bluePurpleGrad(),
