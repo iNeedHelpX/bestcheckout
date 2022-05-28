@@ -1,6 +1,7 @@
 import 'package:bestcheckout/bar%20related/topbar.dart';
 import 'package:bestcheckout/colors/colours_list.dart';
-import 'package:bestcheckout/pages/homepage.dart';
+import 'package:bestcheckout/pages/checkoutpage.dart';
+import 'package:bestcheckout/pages/infopage.dart';
 import 'package:bottom_bar/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -24,15 +25,15 @@ class _AppSetupState extends State<AppSetup> {
         children: [
           //pages
           Container(color: Colors.blue),
-          HomePage(),
-          Container(color: Colors.greenAccent.shade700),
+          CheckoutPage(),
+          InfoPage(),
         ],
         onPageChanged: (index) {
           setState(() => _currentPage = index);
         },
       ),
       bottomNavigationBar: BottomBar(
-        backgroundColor: lightpink,
+        backgroundColor: textturq3,
         height: 90,
         textStyle: TextStyle(fontWeight: FontWeight.bold),
         selectedIndex: _currentPage,
@@ -44,8 +45,8 @@ class _AppSetupState extends State<AppSetup> {
           BottomBarItem(
             icon: Icon(Icons.home),
             title: Text('Home'),
-            activeColor: Colors.blue,
-            activeTitleColor: Colors.blue.shade600,
+            activeColor: textgreyblue,
+            activeTitleColor: containerback,
           ),
           BottomBarItem(
             icon: Icon(Icons.shopping_basket_rounded),
@@ -56,7 +57,7 @@ class _AppSetupState extends State<AppSetup> {
             icon: Icon(Icons.info_rounded),
             title: Text('Information'),
             backgroundColorOpacity: 0.1,
-            activeColor: Colors.greenAccent.shade700,
+            activeColor: textpurple,
           ),
         ],
       ),
