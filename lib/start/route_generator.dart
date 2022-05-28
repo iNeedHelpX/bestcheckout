@@ -1,3 +1,4 @@
+import 'package:bestcheckout/pages/checkoutpage.dart';
 import 'package:bestcheckout/start/start.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,10 +13,10 @@ class RouteGenerator {
         return GetPageRoute(
           page: () => Start(),
         );
-      // case '/cool':
-      //   return GetPageRoute(
-      //     page: () => InfoAboutApp(),
-      //   );
+      case '/checkout':
+        return GetPageRoute(
+          page: () => CheckoutPage(),
+        );
 
       // case '/listofpeople':
       //   return GetPageRoute(
