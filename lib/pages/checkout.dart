@@ -1,15 +1,18 @@
+import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:flutter/material.dart';
 
-class Checkout extends StatefulWidget {
-  Checkout({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  HomePage({Key? key}) : super(key: key);
 
   @override
-  State<Checkout> createState() => _CheckoutState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _CheckoutState extends State<Checkout> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: bg,
+    );
   }
 }
