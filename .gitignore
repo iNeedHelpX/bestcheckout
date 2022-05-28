@@ -50,7 +50,7 @@ android/app/google-services.json
 
 #ios related
 ios/Runner/GoogleService-Info.plist
-**/ios/Runner/GoogleService-Info.plist
+*/ios/Runner/GoogleService-Info.plist
 
 #Config related to api calls for Rapyd
 lib/config
