@@ -47,8 +47,8 @@ class _AppSetupState extends State<AppSetup> {
           ),
           BottomBarItem(
             icon: Icon(Icons.favorite),
-            title: Text('Favorites'),
-            activeColor: Colors.red,
+            title: Text('checkout'),
+            activeColor: tabicon,
           ),
           BottomBarItem(
             icon: Icon(Icons.person),
