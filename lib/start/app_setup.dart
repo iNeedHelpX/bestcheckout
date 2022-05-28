@@ -1,6 +1,6 @@
 import 'package:bestcheckout/bar%20related/topbar.dart';
 import 'package:bestcheckout/colors/colours_list.dart';
-import 'package:bestcheckout/pages/checkout.dart';
+import 'package:bestcheckout/pages/hompage.dart';
 import 'package:bestcheckout/pages/checkoutpage.dart';
 import 'package:bestcheckout/pages/infopage.dart';
 import 'package:bottom_bar/bottom_bar.dart';
