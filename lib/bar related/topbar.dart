@@ -6,11 +6,11 @@ import 'package:google_fonts/google_fonts.dart';
 AppBar myPurpleBar() {
   return AppBar(
     title: Text(
-      "Best checkout",
+      "Best checkout!",
       style: GoogleFonts.schoolbell(
-        color: orangetext,
-        fontWeight: FontWeight.w400,
-        fontSize: 36,
+        color: gold,
+        fontWeight: FontWeight.w700,
+        fontSize: 37,
       ),
     ),
     centerTitle: true,
