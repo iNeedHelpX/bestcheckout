@@ -45,3 +45,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Config related to api calls for Rapyd
+lib/config
+lib/config/config.dart
