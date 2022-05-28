@@ -7,8 +7,9 @@ AppBar myPurpleBar() {
   return AppBar(
     title: Text(
       "Best checkout",
-      style: GoogleFonts.akayaKanadaka(
+      style: GoogleFonts.schoolbell(
         color: orangetext,
+        fontWeight: FontWeight.w400,
         fontSize: 36,
       ),
     ),
