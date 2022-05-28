@@ -20,7 +20,7 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: greenpastel,
-      appBar: myPinkAppBar(),
+      appBar: myPurpleBar(),
       body: PageView(
         controller: _pageController,
         children: [

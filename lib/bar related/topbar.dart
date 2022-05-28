@@ -3,7 +3,7 @@ import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-AppBar myPinkAppBar() {
+AppBar myPurpleBar() {
   return AppBar(
     title: Text(
       "Best checkout",
