@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "406071998585",
+    "project_id": "bestcheckoutrapid",
+    "storage_bucket": "bestcheckoutrapid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406071998585:android:bca2154e179c7b22b27ca8",
+        "android_client_info": {
+          "package_name": "com.juliapak.bestcheckout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406071998585-u1a77n2scsko0ngdqgrennj38vg7f4vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0sKDbWKSZW7J-Fz7DBcjKQj_wMtnRzIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406071998585-u1a77n2scsko0ngdqgrennj38vg7f4vo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "406071998585-nfmm0eir6a6bc6q5isrv1466m0b6itia.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.juliapak.bestcheckout"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
