@@ -13,6 +13,14 @@ class _InfoPageState extends State<InfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bg,
+      extendBody: true,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            //stuff here
+          ],
+        ),
+      ),
     );
   }
 }
