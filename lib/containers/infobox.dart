@@ -8,6 +8,18 @@ class InfoBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: Stack(
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(15, 2, 15, 10),
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 5, 15, 0),
+              width: 400,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
