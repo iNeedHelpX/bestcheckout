@@ -23,6 +23,8 @@ class _AppSetupState extends State<AppSetup> {
       drawerEnableOpenDragGesture: false,
       appBar: myPurpleBar(),
       body: PageView(
+        //stops the ability to scroll between pages offered on the bottom bar
+        physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
         children: [
           //pages
