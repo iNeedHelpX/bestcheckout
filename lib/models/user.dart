@@ -5,15 +5,15 @@ class UserModel {
   static const ID = "id";
   static const NAME = "name";
   static const EMAIL = "email";
-  String id;
-  String name;
-  String email;
-  List<CartItemModel> cart;
+  String? id;
+  String? name;
+  String? email;
+  List<CartItemModel>? cart;
   UserModel({
-    required this.id,
-    required this.name,
-    required this.email,
-    required this.cart,
+    this.id,
+    this.name,
+    this.email,
+    this.cart,
   });
   List<CartItemModel> _convertCartItems(List cartFomDb) {
     List<CartItemModel> _result = [];
@@ -25,5 +25,5 @@ class UserModel {
     return _result;
   }
 
-  List cartItemsToJson() => cart.map((item) => item.toJson()).toList();
+  List cartItemsToJson() => cart!.map((item) => item.toJson()).toList();
 }

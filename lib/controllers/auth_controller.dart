@@ -1,6 +1,8 @@
 import 'package:bestcheckout/constants/firebase_constants.dart';
 import 'package:bestcheckout/models/user.dart';
+import 'package:bestcheckout/pages/hompage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
@@ -27,7 +29,7 @@ class AuthController extends GetxController {
       Get.offAll(() => AuthenticationScreen());
     } else {
       userModel.bindStream(listenToUser());
-      Get.offAll(() => HomeScreen());
+      Get.offAll(() => HomePage());
     }
   }
 
@@ -53,7 +55,7 @@ class AuthController extends GetxController {
           .createUserWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())
           .then((result) {
-        String _userId = result.user.uid;
+        String _userId = result.user!.uid;
         _addUserToFirestore(_userId);
         _clearControllers();
       });
