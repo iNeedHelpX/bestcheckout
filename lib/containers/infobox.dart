@@ -1,5 +1,6 @@
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 //this is a text box to present certain information about the app or whatever info you wish to convey
 class InfoBox extends StatefulWidget {
@@ -69,11 +70,11 @@ class _InfoBoxState extends State<InfoBox> {
       alignment: Alignment.topCenter,
       child: Text(
         widget.boomtitle,
-        style: TextStyle(
-            color: bg,
-            fontFamily: 'luv',
-            fontSize: 25,
-            fontWeight: FontWeight.w900),
+        style: GoogleFonts.schoolbell(
+          fontSize: 36,
+          color: textturq3,
+          fontWeight: FontWeight.bold,
+        ),
         textAlign: TextAlign.center,
       ),
     );
@@ -88,10 +89,9 @@ class _InfoBoxState extends State<InfoBox> {
           children: [
             TextSpan(
               text: widget.subtext,
-              style: TextStyle(
-                color: orangetext,
-                fontFamily: 'anika',
-                fontSize: 22,
+              style: GoogleFonts.cherryCreamSoda(
+                color: gold,
+                fontSize: 18,
               ),
             ),
           ],
