@@ -2,6 +2,7 @@ import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:bestcheckout/containers/infobox.dart';
 import 'package:flutter/material.dart';
 
+//the info page. Person sees this page when pressing i at the bottom screen bar
 class InfoPage extends StatefulWidget {
   InfoPage({Key? key}) : super(key: key);
 
