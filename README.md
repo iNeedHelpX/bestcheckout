@@ -1,16 +1,11 @@
 # bestcheckout
 
-A new Flutter project.
+A simple app using rapyd payments
+<img src="https://user-images.githubusercontent.com/41366455/170864985-c30fde56-690e-4197-a350-c59381e21801.png" alt="que app" width="300"/> 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://user-images.githubusercontent.com/41366455/170864920-38edb433-fdc8-4001-98f9-3e9482c5512f.png" alt="que app" width="150"/> 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
