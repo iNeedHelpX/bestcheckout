@@ -20,6 +20,7 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bg,
+      drawerEnableOpenDragGesture: false,
       appBar: myPurpleBar(),
       body: PageView(
         controller: _pageController,
