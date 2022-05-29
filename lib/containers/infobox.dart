@@ -1,6 +1,7 @@
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:flutter/material.dart';
 
+//this is a text box to present certain information about the app or whatever info you wish to convey
 class InfoBox extends StatefulWidget {
   final String boomtitle;
   final String subtext;
