@@ -29,7 +29,7 @@ class _AppSetupState extends State<AppSetup> {
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
         children: [
-          //pages
+          //pages listed at bottom in order
           HomePage(),
           CheckoutPage(),
           InfoPage(),
