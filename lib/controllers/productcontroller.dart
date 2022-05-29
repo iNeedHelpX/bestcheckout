@@ -4,8 +4,8 @@ import 'package:bestcheckout/models/product.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ProducsController extends GetxController {
-  static ProducsController instance = Get.find();
+class ProductsController extends GetxController {
+  static ProductsController instance = Get.find();
   RxList<ProductModel> products = RxList<ProductModel>([]);
   String collection = "products";
 
@@ -16,6 +16,13 @@ class ProducsController extends GetxController {
   }
 
   Stream<List<ProductModel>> getAllProducts() =>
-      firebaseFirestore.collection(collection).snapshots().map((query) =>
-          query.docs.map((item) => ProductModel.fromMap(item.data())).toList());
+      firebaseFirestore.collection(collection).snapshots().map(
+            (query) => query.docs
+                .map(
+                  (item) => ProductModel.fromMap(
+                    item.data(),
+                  ),
+                )
+                .toList(),
+          );
 }
