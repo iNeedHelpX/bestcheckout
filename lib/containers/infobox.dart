@@ -52,14 +52,16 @@ class _InfoBoxState extends State<InfoBox> {
 //the box color and design
   BoxDecoration _decor() {
     return BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        color: textgreyblue,
-        boxShadow: [
-          BoxShadow(
-              color: Color.fromARGB(255, 98, 21, 255),
-              offset: Offset(11, 10),
-              blurRadius: 75),
-        ]);
+      borderRadius: BorderRadius.circular(10),
+      color: textgreyblue,
+      boxShadow: [
+        BoxShadow(
+          color: errorcolor,
+          offset: Offset(11, 10),
+          blurRadius: 75,
+        ),
+      ],
+    );
   }
 
   Align _boomTitle() {
