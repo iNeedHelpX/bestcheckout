@@ -21,7 +21,7 @@ class _InfoPageState extends State<InfoPage> {
           children: [
             //stuff here
             InfoBox(
-                boomtitle: "About this app",
+                boomtitle: "About this Application",
                 subtext: "a basic checkout experience using rapyd payments")
           ],
         ),
