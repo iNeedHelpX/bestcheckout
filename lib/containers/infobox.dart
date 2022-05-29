@@ -53,10 +53,10 @@ class _InfoBoxState extends State<InfoBox> {
   BoxDecoration _decor() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: textgreyblue,
+      color: containerback,
       boxShadow: [
         BoxShadow(
-          color: errorcolor,
+          color: textpurple,
           offset: Offset(11, 10),
           blurRadius: 75,
         ),
@@ -70,7 +70,7 @@ class _InfoBoxState extends State<InfoBox> {
       child: Text(
         widget.boomtitle,
         style: TextStyle(
-            color: textturq,
+            color: bg,
             fontFamily: 'luv',
             fontSize: 25,
             fontWeight: FontWeight.w900),

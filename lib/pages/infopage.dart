@@ -1,4 +1,5 @@
 import 'package:bestcheckout/colors/colours_list.dart';
+import 'package:bestcheckout/containers/infobox.dart';
 import 'package:flutter/material.dart';
 
 class InfoPage extends StatefulWidget {
@@ -18,6 +19,9 @@ class _InfoPageState extends State<InfoPage> {
         child: Column(
           children: [
             //stuff here
+            InfoBox(
+                boomtitle: "About this app",
+                subtext: "a basic checkout experience using rapyd payments")
           ],
         ),
       ),
