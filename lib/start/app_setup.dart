@@ -6,6 +6,8 @@ import 'package:bestcheckout/pages/infopage.dart';
 import 'package:bottom_bar/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
+import '../bar related/bottombaricons.dart';
+
 class AppSetup extends StatefulWidget {
   AppSetup({Key? key}) : super(key: key);
 
@@ -45,25 +47,7 @@ class _AppSetupState extends State<AppSetup> {
           _pageController.jumpToPage(index);
           setState(() => _currentPage = index);
         },
-        items: <BottomBarItem>[
-          BottomBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-            activeColor: textgreyblue,
-            activeTitleColor: containerback,
-          ),
-          BottomBarItem(
-            icon: Icon(Icons.shopping_basket_rounded),
-            title: Text('checkout'),
-            activeColor: tabicon,
-          ),
-          BottomBarItem(
-            icon: Icon(Icons.info_rounded),
-            title: Text('Information'),
-            backgroundColorOpacity: 0.1,
-            activeColor: textpurple,
-          ),
-        ],
+        items: bottomBarIcons,
       ),
     );
   }
