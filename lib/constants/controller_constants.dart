@@ -3,7 +3,7 @@ import 'package:logger/logger.dart';
 
 ProductsController productsController = ProductsController.instance;
 Logger logger = Logger();
-// AppController appController = AppController.instance;
+//  AppController appController = AppController.instance;
 //  UserController userController = UserController.instance;
 //  CartController cartController = CartController.instance;
 //  PaymentsController paymentsController = PaymentsController.instance;
