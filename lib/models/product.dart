@@ -1,25 +1,21 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class ProductModel {
-  static const ID = "id";
-  static const IMAGE = "image";
-  static const NAME = "name";
-  static const PRICE = "price";
+  final String name;
+  final double price;
+  final String image;
 
-  late String id;
-  late String image;
-  late String name;
-  late double price;
+  const ProductModel({
+    required this.name,
+    required this.price,
+    required this.image,
+  });
 
-  ProductModel(
-      {required this.id,
-      required this.image,
-      required this.name,
-      required this.price});
-
-  ProductModel.fromMap(Map<String, dynamic> data) {
-    id = data[ID];
-    image = data[IMAGE];
-    name = data[NAME];
-
-    price = data[PRICE].toDouble();
+  static ProductModel fromSnapshot(DocumentSnapshot snapshot) {
+    ProductModel product = ProductModel(
+        image: snapshot['image'],
+        name: snapshot['name'],
+        price: snapshot['price']);
+    return product;
   }
 }
