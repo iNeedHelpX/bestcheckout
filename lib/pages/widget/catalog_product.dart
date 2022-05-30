@@ -1,4 +1,5 @@
 import 'package:bestcheckout/colors/colours_list.dart';
+import 'package:bestcheckout/controller/cart_controller.dart';
 import 'package:bestcheckout/controller/product_controller.dart';
 import 'package:bestcheckout/models/product.dart';
 import 'package:bestcheckout/pages/checkoutpage.dart';
@@ -26,6 +27,7 @@ class CatalogProducts extends StatelessWidget {
 }
 
 class ProductCard extends StatelessWidget {
+  final cartController = Get.put(CartController());
   final ProductController productController = Get.find();
   final int index;
   ProductCard({Key? key, required this.index}) : super(key: key);
@@ -57,7 +59,7 @@ class ProductCard extends StatelessWidget {
             IconButton(
                 onPressed: () {
                   //ok
-                  Get.to(CheckoutPage());
+                  cartController.addProduct(productController.products[index]);
                 },
                 icon: Icon(Icons.add_box))
           ]),
