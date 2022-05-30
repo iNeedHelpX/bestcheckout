@@ -9,23 +9,23 @@ import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();
-  late Rx<User> firebaseUser;
+  late Rx<User?> firebaseUser;
   RxBool isLoggedIn = false.obs;
   TextEditingController name = TextEditingController();
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
   String usersCollection = "users";
-  Rx<UserModel> userModel = UserModel().obs;
+  Rx<UserModel?> userModel = UserModel().obs;
 
   @override
   void onReady() {
     super.onReady();
-    firebaseUser = Rx<User>(auth.currentUser);
+    firebaseUser = Rx<User?>(auth.currentUser);
     firebaseUser.bindStream(auth.userChanges());
-    ever(firebaseUser, _setInitialScreen);
+    ever<User?>(firebaseUser, _setInitialScreen);
   }
 
-  _setInitialScreen(User user) {
+  _setInitialScreen(User? user) {
     if (user == null) {
       Get.offAll(() => AuthenticationScreen());
     } else {
@@ -89,13 +89,13 @@ class AuthController extends GetxController {
     logger.i("UPDATED");
     firebaseFirestore
         .collection(usersCollection)
-        .doc(firebaseUser.value.uid)
+        .doc(firebaseUser.value!.uid)
         .update(data);
   }
 
   Stream<UserModel> listenToUser() => firebaseFirestore
       .collection(usersCollection)
-      .doc(firebaseUser.value.uid)
+      .doc(firebaseUser.value!.uid)
       .snapshots()
       .map((snapshot) => UserModel.fromSnapshot(snapshot));
 }
