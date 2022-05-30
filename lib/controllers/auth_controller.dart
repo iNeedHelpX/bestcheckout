@@ -1,6 +1,7 @@
 import 'package:bestcheckout/constants/controller_constants.dart';
 import 'package:bestcheckout/constants/firebase_constants.dart';
 import 'package:bestcheckout/models/user.dart';
+import 'package:bestcheckout/pages/authentication_page.dart';
 import 'package:bestcheckout/pages/hompage.dart';
 import 'package:bestcheckout/utils/show_loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
