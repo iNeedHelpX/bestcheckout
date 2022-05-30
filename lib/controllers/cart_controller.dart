@@ -44,34 +44,33 @@ class CartController extends GetxController {
     }
   }
 
-  void removeCartItem(CartItemModel? cartItem) {
+  void removeCartItem(CartItemModel cartItem) {
     try {
       userController.updateUserData({
-        "cart": FieldValue.arrayRemove([cartItem!.toJson()])
+        "cart": FieldValue.arrayRemove([cartItem.toJson()])
       });
     } catch (e) {
       Get.snackbar("Error", "Cannot remove this item");
-
-      debugPrint(e.toString());
+      debugPrint(e.message);
     }
   }
 
-  changeCartTotalPrice(UserModel? userModel) {
+  changeCartTotalPrice(UserModel userModel) {
     totalCartPrice.value = 0.0;
-    if (userModel!.cart!.isNotEmpty) {
-      userModel.cart!.forEach((cartItem) {
-        totalCartPrice = cartItem.cost as RxDouble;
+    if (userModel.cart.isNotEmpty) {
+      userModel.cart.forEach((cartItem) {
+        totalCartPrice += cartItem.cost;
       });
     }
   }
 
-  bool _isItemAlreadyAdded(ProductModel? product) =>
-      userController.userModel.value!.cart!
-          .where((item) => item.productId == product!.id)
+  bool _isItemAlreadyAdded(ProductModel product) =>
+      userController.userModel.value.cart
+          .where((item) => item.productId == product.id)
           .isNotEmpty;
 
   void decreaseQuantity(CartItemModel item) {
-    if (item.quantity! == 1) {
+    if (item.quantity == 1) {
       removeCartItem(item);
     } else {
       removeCartItem(item);
