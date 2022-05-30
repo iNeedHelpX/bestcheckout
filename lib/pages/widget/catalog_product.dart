@@ -1,6 +1,7 @@
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:bestcheckout/controller/product_controller.dart';
 import 'package:bestcheckout/models/product.dart';
+import 'package:bestcheckout/pages/checkoutpage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -56,6 +57,7 @@ class ProductCard extends StatelessWidget {
             IconButton(
                 onPressed: () {
                   //ok
+                  Get.to(CheckoutPage());
                 },
                 icon: Icon(Icons.add_box))
           ]),

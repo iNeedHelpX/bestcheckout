@@ -1,3 +1,4 @@
+import 'package:bestcheckout/bar%20related/topbar.dart';
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: myPurpleBar(),
       backgroundColor: lightgoldbg,
     );
   }
