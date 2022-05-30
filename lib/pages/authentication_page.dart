@@ -1,9 +1,11 @@
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:bestcheckout/controllers/app_controller.dart';
 import 'package:bestcheckout/start/asset_path.dart';
+import 'package:bestcheckout/widgets/loginwidget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//authpage
 class AuthenticationScreen extends StatelessWidget {
   final AppController _appController = Get.find();
 

@@ -7,10 +7,9 @@ import 'package:bestcheckout/utils/show_loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
-class AuthController extends GetxController {
-  static AuthController instance = Get.find();
+class UserController extends GetxController {
+  static UserController instance = Get.find();
   late Rx<User?> firebaseUser;
   RxBool isLoggedIn = false.obs;
   TextEditingController name = TextEditingController();
