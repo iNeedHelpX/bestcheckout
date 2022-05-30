@@ -30,7 +30,7 @@ class CartItemModel {
     id = data[ID];
     image = data[IMAGE];
     name = data[NAME];
-    quantity = data[QUANTITY];
+    quantity = data[QUANTITY] ?? '';
     cost = data[COST].toDouble();
     productId = data[PRODUCT_ID];
     price = data[PRICE].toDouble();
@@ -41,7 +41,7 @@ class CartItemModel {
         PRODUCT_ID: productId,
         IMAGE: image,
         NAME: name,
-        QUANTITY: quantity,
+        QUANTITY: quantity != null,
         COST: price! * quantity!,
         PRICE: price
       };
