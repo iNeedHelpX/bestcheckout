@@ -1,4 +1,5 @@
 import 'package:bestcheckout/colors/colours_list.dart';
+import 'package:bestcheckout/colors/pinkpurple_gradient.dart';
 import 'package:bestcheckout/controller/cart_controller.dart';
 import 'package:bestcheckout/controller/product_controller.dart';
 import 'package:bestcheckout/models/product.dart';
@@ -37,7 +38,12 @@ class ProductCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(10, 25, 10, 0),
       child: Container(
-        color: lightgoldbg,
+        padding: EdgeInsets.only(left: 10, right: 0),
+        margin: EdgeInsets.only(left: 10, right: 0),
+        height: 300,
+        decoration: BoxDecoration(
+            gradient: pinkPurpleGrad(),
+            borderRadius: BorderRadius.circular(15)),
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(children: [
