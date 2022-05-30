@@ -1,7 +1,6 @@
 import 'package:bestcheckout/colors/colours_list.dart';
 import 'package:bestcheckout/pages/widget/catalog_product.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);

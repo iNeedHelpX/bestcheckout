@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class CartItemModel {
   static const ID = "id";
   static const IMAGE = "image";
