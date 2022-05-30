@@ -16,10 +16,10 @@ class UserModel {
   UserModel({this.id, this.name, this.email, this.cart});
 
   UserModel.fromSnapshot(DocumentSnapshot snapshot) {
-    name = snapshot.data()[NAME];
-    email = snapshot.data()[EMAIL];
-    id = snapshot.data()![ID];
-    cart = _convertCartItems(snapshot.data()[CART] ?? []);
+    name = snapshot[NAME];
+    email = snapshot[EMAIL];
+    id = snapshot[ID];
+    cart = _convertCartItems(snapshot[CART] ?? []);
   }
 
   List<CartItemModel> _convertCartItems(List cartFomDb) {
