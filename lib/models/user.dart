@@ -21,7 +21,7 @@ class UserModel {
     id = snapshot[ID];
     cart = _convertCartItems(snapshot[CART] ?? []);
   }
-
+//ties the user to the shopping cart
   List<CartItemModel> _convertCartItems(List cartFomDb) {
     List<CartItemModel> _result = [];
     if (cartFomDb.length > 0) {
